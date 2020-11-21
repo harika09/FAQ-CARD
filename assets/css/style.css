@@ -1,0 +1,290 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+:root{
+
+    /* Colors Text */
+    --Very-dark-desaturated-blue: hsl(238, 29%, 16%) ;
+    --Soft-red: hsl(14, 88%, 65%) ;
+
+    /* Colors Background */
+    --Soft-violet: hsl(273, 75%, 66%);
+    --Soft-blue: hsl(240, 73%, 65%);
+
+    /* Neutral Color Text */
+    --Very-dark-grayish-blue: hsl(237, 12%, 33%);
+    --Dark-grayish-blue: hsl(240, 6%, 50%);
+
+    /* Dividers */
+    --Light-grayish-blue: hsl(240, 5%, 91%);
+}
+
+
+:root{
+    /* Fonts */
+    --kumbh-Sans: 'Kumbh Sans', sans-serif;
+    --kumbh-400: 400;
+    --kumbh-700: 700;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background-color: var(--Soft-violet);
+}
+
+.main__container{
+    display: flex;
+    width: 60%;
+    height: 65%;
+    background-color: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+    
+}
+
+/* Image Container*/
+.card__img{
+    width: 50%;
+    height: auto;
+}
+
+.woman{
+ position: relative;
+  width: auto;
+  height: 70%;
+  bottom: 750px;
+  right: 100px;
+  margin-top: 15%;
+  z-index: 1;
+  
+}
+
+
+.box{
+
+    position: absolute;
+    top: 42%;
+    left: 15%;
+    z-index: 2;
+}
+
+.pattern{
+ position: relative;
+  height: 725px;
+  width: auto;
+  bottom: 150px;
+  right: 300px;
+}
+
+.mobile__pattern{
+    display: none;
+}
+
+/* Text Container */
+.card__text{
+    width: 50%;
+    display: block;
+    position: relative;
+    top: 35%;
+    left: 30%;
+    transform: translate(-50%, -25%);
+    font-family: var(--kumbh-Sans);
+}
+
+.faq{
+    font-size: 2rem;
+}
+
+h3{
+    font: 1rem;
+    margin-bottom: 10px;
+    font-weight: var(--kumbh-400);
+    color: var(--Dark-grayish-blue);
+}
+
+h3:hover{
+    cursor: pointer;
+    color: var(--Soft-red);
+}
+
+h3 img{
+    position: relative;
+    float: right;
+    display: flex;
+    cursor: pointer;
+    right: 80px;
+}
+
+hr{
+    width: 75%;
+}
+.faq{
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+.cards__title{
+    margin-bottom: 15px;
+    width: 80%;
+   
+}
+
+p{
+    font-size: 13px;  
+    color: var(--Dark-grayish-blue);
+    width: 80%;
+    display: none;
+    line-height: 2;
+    font-family: var(--kumbh-Sans);
+}
+
+
+
+
+
+
+@media screen and (max-width: 1024px){
+   
+    .main__container{
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 450px;
+        height: 500px;
+    }
+
+    .card__text{
+        display: block;
+        font-size: .8rem;
+        width: 400px;
+        margin-top: 10px;
+        left: 55%;
+    }
+
+    .cards__title{
+        font-size: 1.rem;
+        width: 80%;
+    }
+
+    h3 img{
+        float: left;
+        position: relative;
+        left: 300px;
+    }
+    hr{
+        width: 90%;
+    }
+    .faq{
+        text-align: center;
+    }
+
+    p{
+        width: 100%;
+        font-size: .7rem;
+        padding-left: 10px;
+    }
+
+   /* Image */
+    .card__img{
+        width: 50%;
+        position: absolute;
+        background: url(/assets/img/bg-pattern-mobile.svg) no-repeat;
+        background-position: 50px 20px;
+    }
+    
+
+    .woman{
+        position: relative;
+        width: 250px;
+        max-width: 100%;
+        height: auto;
+        bottom: 170px;
+        left: 80px;
+    }
+
+    .box{
+        display: none;
+    }
+
+    .pattern{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 600px){
+
+    .main__container{
+        width: 300px;
+        height: 450px;
+    }
+
+    .card__text{
+        display: block;
+        font-size: .8rem;
+        width: 300px;
+        margin-top: 10px;
+        left: 60%;
+    }
+
+    .cards__title{
+        font-size: .1rem;
+        width: 70%;
+    }
+
+    h3 img{
+        float: left;
+        position: relative;
+        left: 200px;
+    }
+    .faq{
+        font-size: 1rem;
+        text-align: center;
+        padding-right: 50px;
+    }
+
+    p{
+        width: 100%;
+        font-size: .5rem;
+        padding-left: 10px;
+    }
+
+    .box{
+        display: none;
+    }
+
+
+       /* Image */
+       .card__img{
+        width: 80%;
+        position: absolute;
+        margin-right: auto;
+        margin-left: auto;
+        background: url(/assets/img/bg-pattern-mobile.svg) no-repeat;
+        background-position: 40px 5px;
+    }
+    
+
+    .woman{
+        position: relative;
+        width: 200px;
+        max-width: 100%;
+        height: auto;
+        bottom: 150px;
+        left: 50px;
+    }
+
+    .box{
+       background: url(/assets/img/illustration-box-desktop.svg) no-repeat;
+     }
+}
+
